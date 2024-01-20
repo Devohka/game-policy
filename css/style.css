@@ -1,0 +1,96 @@
+/* темно сірий зелений #2F4F4F */
+/* світло-сірий LightGray #D3D3D3 */
+/* Серебро #C0C0C0 */
+/* Білий #FFFFFF */
+/* сірий #808080*/
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  h2,
+  h1,
+  h3,
+  h4 {
+    margin: 0;
+  }
+  
+  body {
+    background-color: RoyalBlue;
+    font-family: "Roboto";
+  }
+  
+.box-game {
+    position: absolute;
+    background-color: #2F4F4F;
+    padding-bottom: 42%;
+    left: 0px;
+    width: 500px;
+    top: 0px;
+    /* display: none; */
+}
+
+/* menu */
+
+.img-menu {
+    width: 60px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+.title-menu {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #FFFFFF;
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+
+.list-menu {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.item-menu {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-menu {
+    background-color:  #FFFFFF;
+    padding: 12px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 19px;
+    border: 3px solid #D3D3D3 ;
+     
+}
+
+.item-menu:last-child{
+    margin-top: 150px;
+}
+
+.page-menu:hover {
+    color: #C0C0C0;
+    border: 3px solid #808080 ;
+   
+}
+
+/* game-ply*/
+
