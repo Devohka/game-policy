@@ -26,8 +26,22 @@ ul {
     margin: 0;
   }
   
+
+  .box-world {
+    background-image: url("../img/world.png");
+    background-repeat: no-repeat;
+    background-size: 1920px 1000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1920px;
+    height: 955px;
+    z-index: -1;
+  }
+
   body {
-    background-color: RoyalBlue;
+   
+    background-color: MidnightBlue;
     font-family: "Roboto";
   }
   
@@ -38,6 +52,8 @@ ul {
     left: 0px;
     width: 500px;
     top: 0px;
+    z-index: 999;
+    opacity: 1;
     /* display: none; */
 }
 
@@ -94,3 +110,137 @@ ul {
 
 /* game-ply*/
 
+
+
+.box-mainland-usa-pn {
+  position: absolute;
+  top: 240px;
+  width: 250px;
+  height: 80px;
+  border: 2px solid red;
+  left: 230px;
+  
+}
+
+.box-mainland-usa-pd {
+  position: absolute;
+  border: 2px solid red;
+  width: 150px;
+  height: 150px;
+  top: 510px; 
+  left: 600px;
+  
+}
+
+
+.box-mainland-japan {
+  position: absolute;
+  border: 2px solid red;
+  width: 90px;
+  height: 70px;
+  top: 250px; 
+  left: 1730px;
+}
+
+
+.box-mainland-cccp {
+  position: absolute;
+  border: 2px solid red;
+  width: 740px;
+  height: 130px;
+  top: 90px; 
+  left: 1150px;
+}
+
+.box-mainland-germany {
+  position: absolute;
+  border: 2px solid red;
+  width: 180px;
+  height: 30px;
+  top: 225px; 
+  left: 950px;
+}
+
+
+.box-mainland-britain {
+  position: absolute;
+  border: 2px solid red;
+  width: 60px;
+  height: 60px;
+  top: 160px; 
+  left: 910px;
+}
+
+.box-mainland-australia {
+  position: absolute;
+  border: 2px solid red;
+  width: 240px;
+  height: 210px;
+  top: 550px; 
+  left: 1630px;
+}
+
+.box-mainland-africa {
+  position: absolute;
+  border: 2px solid red;
+  width: 100px;
+  height: 120px;
+  top: 320px; 
+  left: 1070px;
+}
+
+
+
+.btn-skip {
+  position: absolute;
+  background-color:  #FFFFFF;
+    padding: 12px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 19px;
+    top: 850px;
+    left: 1770px;
+    border: 3px solid #D3D3D3;
+    display: none;
+}
+
+.btn-skip:hover {
+  color: #C0C0C0;
+  border: 3px solid #808080 ;
+ 
+}
+
+
+/* technologies */
+
+
+.btn-technologies {
+  position: absolute;
+  background-color:  #2F4F4F;
+    padding: 12px;
+    border-radius: 15px;
+    color: #F0FFFF;
+    font-size: 19px;
+    top: 850px;
+    left: 900px;
+    border: 3px solid #000000;
+    display: none;
+}
+
+.btn-technologies:hover {
+  color: #708090;
+  border: 3px solid #708090 ;
+ 
+}
+
+.box-technologes {
+  background-color: #2F4F4F;
+  width: 1500px;
+  height: 750px;
+  border-radius: 25px;
+  top: 50px;
+  left: 220px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
