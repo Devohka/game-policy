@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game-Policy</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald:wght@500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="box-game">
         <h1 class="title-menu">ВИБЕРІТЬ КРАЇНУ</h1>
@@ -42,26 +46,54 @@
 
     <div class="box-technologes" data-teh>
         <ul class="list-teh">
-            <li class="item-teh"><button class="btn-teh">1</button></li>
-            <li class="item-teh"><button class="btn-teh">2</button></li>
-            <li class="item-teh"><button class="btn-teh">3</button></li>
-            <li class="item-teh"><button class="btn-teh">4</button></li>
-            <li class="item-teh"><button class="btn-teh">5</button></li>
-            <li class="item-teh"><button class="btn-teh">6</button></li>
-            <li class="item-teh"><button class="btn-teh">7</button></li>
-            <li class="item-teh"><button class="btn-teh">8</button></li>
-            <li class="item-teh"><button class="btn-teh">9</button></li>
-            <li class="item-teh"><button class="btn-teh">10</button></li>
+            <li class="item-teh">
+                <button type="button" class="btn-teh" data-sniper>Снайпер</button>
+            </li>
+            <div class="press">
+                <li class="item-teh">
+                    <button type="button" class="btn-teh" data-plane>Літак/Машина</button>
+                </li>
+                <div class="press">
+                    <li class="item-teh">
+                        <button type="button" class="btn-teh" data-ships>Кораблі</button>
+                    </li>
+                    <div class="press">
+                        <li class="item-teh">
+                            <button type="button" class="btn-teh" data-rocket>Ракета</button>
+                        </li>
+                        <div class="press">
+                            <li class="item-teh">
+                                <button type="button" class="btn-teh" data-sab>Мала-Атомна Бомба</button>
+                            </li>
+                            <div class="press">
+                                <li class="item-teh">
+                                    <button type="button" class="btn-teh" data-tb>Царь бомба</button>
+                                </li>
+                            </div>
+                            <li class="item-teh">
+                                <button type="button" class="btn-teh" data-debriefing>Розвітка</button>
+                            </li>
+                        </div>
+                        <li class="item-teh">
+                            <button type="button" class="btn-teh" data-tires>Шини</button>
+                        </li>
+                    </div>
+                    <li class="item-teh">
+                        <button type="button" class="btn-teh" data-radar>Радар</button>
+                    </li>
+                </div>
+                <li class="item-teh">
+                    <button type="button" class="btn-teh" data-anxiety>Тривога</button>
+                </li>
+            </div>
+            <li class="item-teh">
+                <button type="button" class="btn-teh" data-airDefense>ПВО</button>
+            </li>
+            <li class="item-teh">
+                <button type="button" class="btn-teh-close" data-close>close</button>
+            </li>
         </ul>
     </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -75,6 +107,7 @@
     <div class="box-mainland-britain"></div>
     <div class="box-mainland-africa"></div>
     <div class="box-mainland-australia"></div>
-    <script src="../js/index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>

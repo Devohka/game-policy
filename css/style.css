@@ -214,6 +214,42 @@ ul {
 /* technologies */
 
 
+
+.btn-teh-close {
+  position: absolute;
+  background-color: #008080;
+  color: #FFFFFF;
+  left: 1420px;
+  top: 15px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+
+}
+
+.btn-teh {
+  background-color: #5F9EA0;
+  color: #FFFFFF;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+}
+
+.press {
+  margin-left: 140px;
+}
+
+.item-teh {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
 .btn-technologies {
   position: absolute;
   background-color:  #2F4F4F;
