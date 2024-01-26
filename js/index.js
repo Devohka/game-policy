@@ -20,6 +20,7 @@ const radar = document.querySelector("[data-radar]");
 const anxienty = document.querySelector("[data-anxiety]");
 const airDefense = document.querySelector("[data-airDefense]");
 
+const mesaggeTech = document.querySelector("[data-titleTeh]");
 
 const menu = document.querySelector(".box-game");
 
@@ -63,27 +64,84 @@ const objTech = {
     radarO: false,
     anxientyO: false,
     airDefenseO: false,
-
-    
-
 };
 
 sniper.addEventListener("click", () => {
  const snip = objTech.sniperO = true;
- localStorage.setItem("snip", JSON.stringify(snip));
+ mesaggeTech.textContent = "Ви можете вивчити ПВО";
 });
 
 airDefense.addEventListener("click", () => {
-   
-    if (localStorage.getItem("snip") === true) {
-        skip.textContent = "csdjvj";
+    if ( objTech.sniperO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити ТРИВОГУ";
+        objTech.airDefenseO = true;  
     } else {
-        skip.textContent = "sssdaadf";
+        mesaggeTech.textContent = "ВИВЧІТЬ СНАЙПЕРА";
     }
 });
 
+anxienty.addEventListener("click", () => {
+    if ( objTech.airDefenseO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити РАДАР";
+        objTech.anxientyO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ ПВО";
+    }
+});
 
+radar.addEventListener("click", () => {
+    if ( objTech.anxientyO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити РОЗВІТКУ";
+       objTech.radarO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ ТРИВОГУ";
+    }
+});
 
+debriefing.addEventListener("click", () => {
+    if ( objTech.radarO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити ШИНИ";
+       objTech.debriefingO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ ТРИВОГУ";
+    }
+});
+
+tires.addEventListener("click", () => {
+    if ( objTech.debriefingO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити ЛІТАК/МАШИНУ";
+       objTech.tiresO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ РОЗВІТКУ";
+    }
+});
+
+plane.addEventListener("click", () => {
+    if ( objTech.tiresO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити КОРАБЕЛЬ";
+       objTech.planeO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ ШИНИ";
+    }
+});
+
+ships.addEventListener("click", () => {
+    if ( objTech.planeO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити РКЕКЕТУ";
+       objTech.shipsO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ ЛІТАК/МАШИНУ";
+    }
+});
+
+rocket.addEventListener("click", () => {
+    if ( objTech.shipsO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити МАЛУ-АТОМНУ БОМБУ";
+       objTech.rocketO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ КОРАБЛІ";
+    }
+});
 
 
 // Країни

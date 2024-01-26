@@ -230,6 +230,14 @@ ul {
 
 }
 
+.teh-title {
+  color: #FFFFFF;
+  font-size: 36px;
+  position: absolute;
+  left: 990px;
+  top: 100px;
+}
+
 .btn-teh {
   background-color: #5F9EA0;
   color: #FFFFFF;
