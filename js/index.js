@@ -30,6 +30,12 @@ const cccpM = document.querySelector(".box-mainland-cccp");
 const germanyM = document.querySelector(".box-mainland-germany");
 const britainM = document.querySelector(".box-mainland-britain");
 
+
+const africaM = document.querySelector(".box-mainland-africa");
+const pdAmericaM = document.querySelector(".box-mainland-usa-pd");
+const australiaM = document.querySelector(".box-mainland-australia");
+
+
 const tech = document.querySelector("[data-teh]");
 
 function createHideMenu() {
@@ -37,6 +43,92 @@ function createHideMenu() {
     skip.style.display = "block";
     technologies.style.display = "block";
 };
+
+
+
+// Країни/взаємодія
+
+const countryObj = {
+    britainO: false,
+    cccpO: false,
+    germanyO: false,
+    japanO: false,
+    usaO: false,
+};
+
+const usaBtn = document.querySelector("[data-pn]");
+const pdAmerica = document.querySelector("[data-pd]");
+const japanBtn = document.querySelector("[data-japanBtn]");
+const cccpBtn = document.querySelector("[data-cccpBtn]");
+const germanyBtn = document.querySelector("[data-germanyBtn]");
+const britianBtn = document.querySelector("[data-britianBtn]");
+const africa = document.querySelector("[data-africa]");
+const australia = document.querySelector("[data-australia]");
+
+
+// Країни ігрока 
+
+usaBtn.addEventListener("click", () => {
+    if(countryObj.usaO === true) {
+        skip.textContent = "dsf";
+    } else {
+        skip.textContent = "dsksd";
+        usaM.style.borderColor = "BlueViolet";
+    };
+});
+
+japanBtn.addEventListener("click", () => {
+    if(countryObj.japanO === true) {
+        skip.textContent = "dsf";
+    } else {
+        skip.textContent = "dsksd";
+        japanM.style.borderColor = "BlueViolet";
+    };
+});
+
+cccpBtn.addEventListener("click", () => {
+    if(countryObj.cccpO === true) {
+        skip.textContent = "dsf";
+    } else {
+        skip.textContent = "dsksd";
+        cccpM.style.borderColor = "BlueViolet";
+    };
+});
+
+germanyBtn.addEventListener("click", () => {
+    if(countryObj.germanyO === true) {
+        skip.textContent = "dsf";
+    } else {
+        skip.textContent = "dsksd";
+        germanyM.style.borderColor = "BlueViolet";
+    };
+});
+
+britianBtn.addEventListener("click", () => {
+    if(countryObj.britainO === true) {
+        skip.textContent = "dsf";
+    } else {
+        skip.textContent = "dsksd";
+        britainM.style.borderColor = "BlueViolet";
+    };
+});
+
+// Країни бота
+
+pdAmerica.addEventListener("click", () => {
+    skip.textContent = "dsksd";
+    pdAmericaM.style.borderColor = "BlueViolet";
+});
+
+africa.addEventListener("click", () => {
+    skip.textContent = "dsksd";
+    africaM.style.borderColor = "BlueViolet";
+});
+
+australia.addEventListener("click", () => {
+    skip.textContent = "dsksd";
+    australiaM.style.borderColor = "BlueViolet";
+});
 
 
 
@@ -127,7 +219,7 @@ plane.addEventListener("click", () => {
 
 ships.addEventListener("click", () => {
     if ( objTech.planeO === true) {
-        mesaggeTech.textContent = "Ви можете вивчити РКЕКЕТУ";
+        mesaggeTech.textContent = "Ви можете вивчити РAКЕКЕТУ";
        objTech.shipsO = true;  
     } else {
         mesaggeTech.textContent = "ВИВЧІТЬ ЛІТАК/МАШИНУ";
@@ -163,28 +255,39 @@ tb.addEventListener("click", () => {
 
 // Країни
 
+// britainO: false,
+// cccpO: false,
+// germanyO: false,
+// japanO: false,
+// usaO: false,
+
 britain.addEventListener("click", () => {
+    countryObj.britainO = true;
     britainM.style.borderColor = "green";
     createHideMenu()
 });
 
 germany.addEventListener("click", () => {
+    countryObj.germanyO = true;
     germanyM.style.borderColor = "green";
     createHideMenu()
 });
 
 cccp.addEventListener("click", () => {
+    countryObj.cccpO = true;
     cccpM.style.borderColor = "green";
     createHideMenu()
 });
 
 japan.addEventListener("click", () => {
+    countryObj.japanO = true;
     japanM.style.borderColor = "green";
     createHideMenu()
 });
 
 
 usa.addEventListener("click", () => {
+    countryObj.usaO = true;
     usaM.style.borderColor = "green";
     createHideMenu()
 });
