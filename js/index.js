@@ -143,6 +143,23 @@ rocket.addEventListener("click", () => {
     }
 });
 
+sab.addEventListener("click", () => {
+    if ( objTech.rocketO === true) {
+        mesaggeTech.textContent = "Ви можете вивчити ЦАРЬ БОМБУ";
+       objTech.sabO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ РАКЕТУ";
+    }
+});
+
+tb.addEventListener("click", () => {
+    if ( objTech.sabO === true) {
+        mesaggeTech.textContent = "ВИ ВИВЧИЛИ ВСІ ТЕХНОЛОГІЇ";
+       objTech.tbO = true;  
+    } else {
+        mesaggeTech.textContent = "ВИВЧІТЬ МВЛУ-АТОМНУ БОМБУ";
+    }
+});
 
 // Країни
 
