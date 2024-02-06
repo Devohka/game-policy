@@ -65,6 +65,25 @@ const britianBtn = document.querySelector("[data-britianBtn]");
 const africa = document.querySelector("[data-africa]");
 const australia = document.querySelector("[data-australia]");
 
+// choice
+
+function choiceUsa() {
+    usaM.style.borderColor = "BlueViolet";
+
+    japanM.style.borderColor = "red";
+
+    cccpM.style.borderColor = "red";
+
+     germanyM.style.borderColor = "red";
+
+     britainM.style.borderColor = "red";
+
+     pdAmericaM.style.borderColor = "red";
+};
+
+
+
+
 
 // Країни ігрока 
 
@@ -73,7 +92,7 @@ usaBtn.addEventListener("click", () => {
         skip.textContent = "dsf";
     } else {
         skip.textContent = "dsksd";
-        usaM.style.borderColor = "BlueViolet";
+        choiceUsa()
     };
 });
 
